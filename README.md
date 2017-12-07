@@ -76,7 +76,7 @@ There are some good examples of how to integrate Python and the Azure SDK. This 
 You'll first need to install the Azure Storage SDK
 
 ```javascript
-	pip install azure-storage-blob
+	!pip install azure-storage-blob
 ```
 The copy the code from this example https://github.com/Azure-Samples/storage-blobs-python-quickstart/blob/master/example.py to your https://notebooks.azure.com notebook.
 
