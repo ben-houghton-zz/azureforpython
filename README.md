@@ -1,3 +1,4 @@
+
 # Azure for Python Developers
 
  In this workshop, we are going to - 
@@ -8,7 +9,8 @@
 			4. Show how to create Azure resources in notebook using Azure SDK
 			5. Show how to call a Function API as a REST service in Python & notebook
 			6. Show how to use Key Vault to secure API Keys and use this in the Python script
-			7. Exercise: Create notebook. Add Azure SDK. Call predefined Python Echo function using supplied 
+			7. Deploy a Python script as a Chron initiated Azure WebJob
+			8. Exercise: Create notebook. Add Azure SDK. Call predefined Python Echo function using supplied 
 			   API key via the Notebook
 
  ### 1). Create a SaaS Jupyter Notebook
@@ -158,7 +160,27 @@ Something like this -
 
 ```
 
-### 7). Exercise: Call the Azure Function API using Python
+### 7). Deploy a Python script as a Chron initiated Azure WebJob
+
+Function are a great way for executing your Python scripts on Azure, but an alternate approach is to use a Azure WebJob for running background tasks. You can create Azure WebJobs on any Web App implementation or a Function App that not running in Consumption and have them run continuously or be triggered by a chron interval or run them manually.
+
+To deploy the Python script as a WebJob, we need to download the notenbook as a Python script locally and then upload it to the App Service using the Web Job interface. We select the trigger type and then save the Web Job.
+
+
+
+<img src="https://github.com/ben-houghton/azureforpython/blob/master/images/webjob.PNG" width="700">
+
+
+Once deployed the WebJob gets triggered, executes the script and we can view the output in the WebJobs Dashboard.
+
+<img src="https://github.com/ben-houghton/azureforpython/blob/master/images/webjobdashboard.PNG" width="700">
+
+
+
+
+
+
+### 8). Exercise: Call the Azure Function API using       
 
 Put the sections we've covered together - 
 
@@ -167,3 +189,4 @@ Put the sections we've covered together -
 	- Add the Azure SDK
 	- Call the Azure Function Http App using the supplied URL and API Key
 			   
+ 
