@@ -29,7 +29,9 @@ Create a library by clicking on the '+' icon
   
 Add a new Notebook to the library. If this is the one to share, once you have created it ensure that you go to the settings menu and  your check the 'public' checkbox.
 
+
  <img src="https://github.com/ben-houghton/azureforpython/blob/master/images/notebooknew.PNG" width="700">
+
 
 
 
@@ -38,7 +40,10 @@ Add a new Notebook to the library. If this is the one to share, once you have cr
 
 Share the Notebook by clicking on the 'Share' icon and in the dialog box, add a list of users with whom you wish to share.
 
+
 <img src="https://github.com/ben-houghton/azureforpython/blob/master/images/notebookshare.PNG" width="700">
+
+
 
 
 ### 3). Install the Azure Python SDK
@@ -54,10 +59,12 @@ To install the Azure SDK package type -
 <img src="https://github.com/ben-houghton/azureforpython/blob/master/images/jnotebookinstallazure.PNG" width="700">
 
 
+
 This will allow you to write scripts in Python that consume the Azure services and resources in your Azure Subscription
 
 
-The best place to start with help for building Python Apps that run on or integrate with Azure is the Azure Python Developer Centerhttps://azure.microsoft.com/en-us/develop/python/. You can find lots of examples and development scenarios the and also the Azure Python SDK reference http://azure-sdk-for-python.readthedocs.io/en/latest/
+The best place to start with help for building Python Apps that run on or integrate with Azure is the Azure Python Developer Center https://azure.microsoft.com/en-us/develop/python/. You can find lots of examples and development scenarios there and also the Azure Python SDK reference http://azure-sdk-for-python.readthedocs.io/en/latest/
+
 
 ### 4). Create Azure Resources using the Azure Python SDK
 
@@ -81,7 +88,7 @@ After -
 <img src="https://github.com/ben-houghton/azureforpython/blob/master/images/scriptedit.PNG" width="700">
 
 
-When the script runs in your notebook, it's create a new Blb Container and add a file.
+When the script runs in your notebook, it's create a new Blob Container and add a file.
 
 <img src="https://github.com/ben-houghton/azureforpython/blob/master/images/scriptrun.PNG" width="700">
 
