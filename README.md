@@ -1,4 +1,3 @@
-
 # Azure for Python Developers
 
  In this workshop, we are going to - 
@@ -13,23 +12,41 @@
 			8. Exercise: Create notebook. Add Azure SDK. Call predefined Python Echo function using supplied 
 			   API key via the Notebook
 
- ### Create a SaaS Jupyter Notebook
+ ### 1). Create a SaaS Jupyter Notebook
  
  Navigate your browser to the Microsoft Azure Notebooks Url https://notebooks.azure.com
  
  Sign in with your Azure or CORP credentials
  
  
- <img src="https://github.com/ben-houghton/azureforpython/blob/master/images/notebooksstart.PNG" width="800">
+ <img src="https://github.com/ben-houghton/azureforpython/blob/master/images/notebooksstart.PNG" width="700">
 
 
-### Share the notebook with other users
 
 Create a library by clicking on the '+' icon 
 
- <img src="https://github.com/ben-houghton/azureforpython/blob/master/images/notebookslogin.PNG" width="800">
+ <img src="https://github.com/ben-houghton/azureforpython/blob/master/images/notebookslogin.PNG" width="700">
+ 
+ 
+ 
+Add a new Notebook to the library. If this is the one to share, once you have created it ensure that you go to the settings menu and  your check the 'public' checkbox.
 
-### Install the Azure Python SDK
+ <img src="https://github.com/ben-houghton/azureforpython/blob/master/images/notebooknew.PNG" width="700">
+
+
+
+
+### 2). Share the notebook with other users
+
+
+Share the Notebook by clicking on the 'Share' icon and in the dialog box, add a list of users with whom you wish to share.
+
+<img src="https://github.com/ben-houghton/azureforpython/blob/master/images/notebookshare.PNG" width="700">
+
+
+
+
+### 3). Install the Azure Python SDK
 
 This will allow you to write scripts in Python that consume the Azure services and resources in your Azure Subscription
 
