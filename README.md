@@ -164,8 +164,18 @@ Something like this -
 
 Function are a great way for executing your Python scripts on Azure, but an alternate approach is to use a Azure WebJob for running background tasks. You can create Azure WebJobs on any Web App implementation or a Function App that not running in Consumption and have them run continuously or be triggered by a chron interval or run them manually.
 
-To deploy the Python script as a WebJob, we need to download the notenbook as a Python script locally and then upload it to the App Service using the Web Job interface. We select the trigger type and then save the Web Job.
+Take a Python script in our notebook. 
 
+<img src="https://github.com/ben-houghton/azureforpython/blob/master/images/simplescript.PNG" width="700">
+
+
+To deploy the Python script as a WebJob, we need to download the notenbook as a Python script locally. 
+
+<img src="https://github.com/ben-houghton/azureforpython/blob/master/images/simplescriptdownload.PNG" width="700">
+
+
+
+Then upload the file to the App Service using the Web Job interface. We select the trigger type and then save the Web Job.
 
 
 <img src="https://github.com/ben-houghton/azureforpython/blob/master/images/webjob.PNG" width="700">
