@@ -1,5 +1,3 @@
-
-
 # Azure for Python Developers
 
  In this workshop, we are going to - 
@@ -92,3 +90,19 @@ When the script runs in your notebook, it's create a new Blb Container and add a
 
 
 ### 6). Call a Function API as a REST service in Python & notebook
+
+Once I have started creating APIs in Azure using services like Functions or API Apps I can make these available to my scripts. The APIs will be able to perform some sort of heavy duty process that takes a request and returns a response. In this instance I have created a simple Python based Serverless HTTP Function that call be called as a REST service in my Python script. I've made the Function public and ensured that an API key needs to be provided to get access - 
+
+https://benhdemo.azurewebsites.net/api/Pydemo?code=[apikey]
+
+The API can be called in a Python script
+
+```javascript
+	import requests, json
+	api_url = "https://benhdemo.azurewebsites.net/api/Pydemo?code=[apikey]"
+	data = json.dumps({'name':'Ben H'})
+	r = requests.post(api_url, data)
+	print(r.text)
+```
+
+<img src="https://github.com/ben-houghton/azureforpython/blob/master/images/functioncall.PNG" width="700">
