@@ -190,7 +190,7 @@ Once deployed the WebJob gets triggered, executes the script and we can view the
 
 
 
-### 8). Exercise: Call the Azure Function API using       
+### 8). Exercise: Call the Azure Function API using the Notebook script       
 
 Put the sections we've covered together - 
 
