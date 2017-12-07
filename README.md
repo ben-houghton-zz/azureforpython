@@ -1,4 +1,4 @@
-. # Azure for Python Developers
+# Azure for Python Developers
 
  In this workshop, we are going to - 
 
