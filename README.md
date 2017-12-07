@@ -1,4 +1,4 @@
-# Azure for Python Developers
+. # Azure for Python Developers
 
  In this workshop, we are going to - 
 
@@ -46,16 +46,17 @@ Share the Notebook by clicking on the 'Share' icon and in the dialog box, add a 
 
 Navigate to the notebook you created by double-clicking on it's name in the library
 
-<img src="https://github.com/ben-houghton/azureforpython/blob/master/images/jnotebook.PNG" width="700">
- 
- 
-This will allow you to write scripts in Python that consume the Azure services and resources in your Azure Subscription
-
-The best place to start with help for building Python Apps that run on or integrate with Azure is the Azure Python Developer Centerhttps://azure.microsoft.com/en-us/develop/python/. You can find lots of examples and development scenarios the and also the Azure Python SDK reference http://azure-sdk-for-python.readthedocs.io/en/latest/
-
 To install the Azure SDK package type -
 
 ```javascript
 	!pip install azure
 ```
+
+<img src="https://github.com/ben-houghton/azureforpython/blob/master/images/jnotebookinstallazure.PNG" width="700">
+
+
+This will allow you to write scripts in Python that consume the Azure services and resources in your Azure Subscription
+
+The best place to start with help for building Python Apps that run on or integrate with Azure is the Azure Python Developer Centerhttps://azure.microsoft.com/en-us/develop/python/. You can find lots of examples and development scenarios the and also the Azure Python SDK reference http://azure-sdk-for-python.readthedocs.io/en/latest/
+
 
