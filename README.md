@@ -169,7 +169,7 @@ Take a Python script in our notebook.
 <img src="https://github.com/ben-houghton/azureforpython/blob/master/images/simplescript.PNG" width="700">
 
 
-To deploy the Python script as a WebJob, we need to download the notenbook as a Python script locally. 
+To deploy the Python script as a WebJob, we need to download the notebook as a Python script locally. 
 
 <img src="https://github.com/ben-houghton/azureforpython/blob/master/images/simplescriptdownload.PNG" width="700">
 
