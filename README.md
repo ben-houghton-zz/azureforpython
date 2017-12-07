@@ -81,9 +81,14 @@ Before -
 
 
 After -
-<img src="https://github.com/ben-houghton/azureforpython/blob/master/images/scripteditorig.PNG" width="700">
+<img src="https://github.com/ben-houghton/azureforpython/blob/master/images/scriptedit.PNG" width="700">
 
 
 When the script runs in your notebook, it's create a new Blb Container and add a file.
 
 <img src="https://github.com/ben-houghton/azureforpython/blob/master/images/scriptrun.PNG" width="700">
+
+### 5). Call a Function API in Python in the notebook using Azure SDK
+
+
+### 6). Call a Function API as a REST service in Python & notebook
