@@ -6,10 +6,9 @@
 			2. Share the notebook with users in the workshop
 			3. Install Azure SDK to notebook
 			4. Show how to create Azure resources in notebook using Azure SDK
-			5. Show how to call a Function API in Python in the notebook using Azure SDK
-			6. Show how to call a Function API as a REST service in Python & notebook
-			7. Show how to use Key Vault to secure API Keys and use this in the Python script
-			8. Exercise: Create notebook. Add Azure SDK. Call predefined Python Echo function using supplied 
+			5. Show how to call a Function API as a REST service in Python & notebook
+			6. Show how to use Key Vault to secure API Keys and use this in the Python script
+			7. Exercise: Create notebook. Add Azure SDK. Call predefined Python Echo function using supplied 
 			   API key via the Notebook
 
  ### 1). Create a SaaS Jupyter Notebook
@@ -86,10 +85,7 @@ When the script runs in your notebook, it's create a new Blb Container and add a
 
 <img src="https://github.com/ben-houghton/azureforpython/blob/master/images/scriptrun.PNG" width="700">
 
-### 5). Call a Function API in Python in the notebook using Azure SDK
-
-
-### 6). Call a Function API as a REST service in Python & notebook
+### 5). Call a Function API as a REST service in Python & notebook
 
 Once I have started creating APIs in Azure using services like Functions or API Apps I can make these available to my scripts. The APIs will be able to perform some sort of heavy duty process that takes a request and returns a response. In this instance I have created a simple Python based Serverless HTTP Function that call be called as a REST service in my Python script. I've made the Function public and ensured that an API key needs to be provided to get access - 
 
@@ -106,3 +102,59 @@ The API can be called in a Python script
 ```
 
 <img src="https://github.com/ben-houghton/azureforpython/blob/master/images/functioncall.PNG" width="700">
+
+### 6). Use Key Vault to secure API Keys and use this in the Python script
+
+In the previous section we embedded the API key within the URL which coudl be easily retrieved from within our source code. The answer to this insecurity is to hold our API Key in Azure Key Vault and to access it securely using REST call and a Service Principle identity.
+
+There is a great overview for you to follow here - https://docs.microsoft.com/en-us/python/api/overview/azure/key-vault?view=azure-python 
+
+The implementation of this may be spilt into a number of scripts but effectively you need to make a call to Key Vault using a secure Service Principle identity to obtain the API Key and then append the returned value to your API call.
+
+Something like this - 
+
+```javascript
+	import requests, json
+	from azure.keyvault import KeyVaultClient, KeyVaultAuthentication
+	from azure.common.credentials import ServicePrincipalCredentials
+	from azure.keyvault import KeyVaultId
+
+	vault_url = '[key vault url]'
+	secret_name = '[key vault secret name]'
+
+	# create the service principle credentials used to authenticate the client
+	credentials = ServicePrincipalCredentials( 
+			     client_id = '[service principle client id]',
+			     secret = '[service principle secret]',
+			     tenant = '[service principle active directory tenant id]')
+
+	# create the client using the created credentials
+	client = KeyVaultClient(credentials)
+
+	#retrieve the secret service principle credentials
+	secret_bundle = client.get_secret(vault_url, secret_name, secret_version=KeyVaultId.version_none)
+	print('getting secret value...')
+	secret_value = secret_bundle.value
+	print(secret_value)
+
+	#Call the Function API using the retrieved Key Vault secret API KEY
+	print('calling api...')
+
+	api_url = "https://benhdemo.azurewebsites.net/api/Pydemo?code=" + secret_value
+	data = json.dumps({'name':'Ben H'})
+	r = requests.post(api_url, data)
+
+	print('printing secure api response...')
+	print(r.text)
+
+```
+
+### 7). Exercise: Call the Azure Function API using Python
+
+Put the sections we've covered together - 
+
+	- Create a SaaS Jupyter notebook at https://notebooks.azure.com
+	- Share the notebook
+	- Add the Azure SDK
+	- Call the Azure Function Http App using the supplied URL and API Key
+			   
