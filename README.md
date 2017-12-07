@@ -23,7 +23,8 @@
 
 Create a library by clicking on the '+' icon 
 
- <img src="https://github.com/ben-houghton/azureforpython/blob/master/images/notebookslogin.PNG" width="700">
+
+<img src="https://github.com/ben-houghton/azureforpython/blob/master/images/notebookslogin.PNG" width="700">
  
  
   
@@ -75,6 +76,7 @@ You'll first need to install the Azure Storage SDK
 ```javascript
 	pip install azure-storage-blob
 ```
+The copy the code from this example https://github.com/Azure-Samples/storage-blobs-python-quickstart/blob/master/example.py to your https://notebooks.azure.com notebook.
 
 If you follow the instructions to create a storage account through the Azure Portal and then run the script using you storage account name and keys you see the script execute.
 
