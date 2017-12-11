@@ -34,3 +34,7 @@ The `--deployment-source-url` deploys the sample code. This could be set to any 
 The easiest way to test an HttpTrigger Function is to use `curl`. You'll need to know both the name of the FunctionApp and the name of the Function we need to call in order for Curl to work. The final command should look like this:
 
 `curl http://<app_name>.azurewebsites.net/api/<FunctionName>?name=<yourname>`
+
+### Update the Python version for App Service
+
+https://github.com/MicrosoftDocs/visualstudio-docs/blob/master/docs/python/managing-python-on-azure-app-service.md
