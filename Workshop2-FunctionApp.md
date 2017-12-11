@@ -1,3 +1,4 @@
+
 # Get Started with Azure Functions
 
 ## Exercise 1 - Create a new Azure Function App
@@ -36,5 +37,9 @@ The easiest way to test an HttpTrigger Function is to use `curl`. You'll need to
 `curl http://<app_name>.azurewebsites.net/api/<FunctionName>?name=<yourname>`
 
 ### Update the Python version for App Service
+
+As Python is a 'Preview' language there are some peculiarities in installing Python packages. To allow you to install Python packages that your Function code can access and use, you need to update the Python version and the PYTHONPATH AppSettings variable.
+
+You can follow the setup in this article -
 
 https://github.com/MicrosoftDocs/visualstudio-docs/blob/master/docs/python/managing-python-on-azure-app-service.md
