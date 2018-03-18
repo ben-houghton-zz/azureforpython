@@ -6,7 +6,7 @@ You can do this either from notebooks.azure.com, or from your Python development
 
 To make this script work, you'll need your or a service account Azure AD credentials and your subscription ID.
 
-`
+```
 from azure.common.credentials import UserPassCredentials
 from azure.mgmt.resource import ResourceManagementClient
 from azure.mgmt.storage import StorageManagementClient
@@ -61,4 +61,4 @@ blob_service.create_blob_from_bytes(
 )
 
 print(blob_service.make_blob_url('mycontainername', 'myblobname'))
-`
+```
