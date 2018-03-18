@@ -1,8 +1,24 @@
 
 
+# Build a Python Based Text Analytics Function App
 
+In this exercise we will build a simple HTTP Trigger Python Function that performs text Analytics, do this in the Azure Portal so that you can get a flavour of the Azure resource structure 
+
+Once you've created this Function and tested in the Azure Portal, try calling the Function from notebooks.azure.com using Python, or try calling it from PostMan.
+
+Here is the request POST body
+```
+{ 
+
+    "name": "Test App Function App" 
+
+} 
+
+```
+Here is the code for the Functions - you'll need to get a Text Analytics Subscription Key
+
+```
  
-
 ########### Python 2.7 ############# 
 import httplib, urllib, base64 
  
@@ -10,7 +26,7 @@ import httplib, urllib, base64
 headers = { 
     # Request headers 
     'Content-Type': 'application/json', 
-    'Ocp-Apim-Subscription-Key': '408b7ae40d3f434691081e5b18446a82', 
+    'Ocp-Apim-Subscription-Key': '[Text Analytics Subscription Key]', 
 } 
 
  
@@ -63,3 +79,5 @@ except Exception as e:
     print("[Errno {0}] {1}".format(e.errno, e.strerror)) 
 
 #################################### 
+
+```
