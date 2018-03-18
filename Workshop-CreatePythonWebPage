@@ -1,7 +1,14 @@
 
 
+# Build a Storage Account based Python Website
 
+In this exercise we will build a simple Python based website that is hosted in an Azure Storage Account.
 
+You can do this either from notebooks.azure.com, or from your Python development environment.
+
+To make this script work, you'll need your or a service account Azure AD credentials and your subscription ID.
+
+'
 from azure.common.credentials import UserPassCredentials
 from azure.mgmt.resource import ResourceManagementClient
 from azure.mgmt.storage import StorageManagementClient
@@ -20,7 +27,7 @@ storage_account_name = 'myuniquestorageaccount'
 resource_client.resource_groups.create_or_update(
     resource_group_name,
     {
-        'location':'westus'
+        'location':'uksouth'
     }
 )
 
@@ -31,7 +38,7 @@ async_create = storage_client.storage_accounts.create(
         'location':'westus',
         'kind':'storage',
         'sku': {
-            'name':'standard_ragrs'
+            'name':'standard_zrs'
         }
     }
 )
@@ -56,3 +63,4 @@ blob_service.create_blob_from_bytes(
 )
 
 print(blob_service.make_blob_url('mycontainername', 'myblobname'))
+'
