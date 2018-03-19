@@ -62,6 +62,11 @@ Post Request JSON Body
                 "language": "en",
                 "id": "5",
                 "text": "This is my favorite trail. It has beautiful views and many places to stop and rest"
+            },
+            {
+                "language": "es", 
+                "id": "6", 
+                "text": "Los caminos que llevan hasta Monte Rainier son espectaculares y hermosos."
             }
         ]
     }
