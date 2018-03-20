@@ -1,5 +1,9 @@
 # Create a Python HttpTrigger that performs sentiment analysis on a collection text
 
+This Python Function code receives a collection of text snippets as a POST body which it submits to Azure Cognitive Services Text Analytics API. The Function makes a REST call with Post body to the API using the HTTPLib module
+
+You can change the API call to use the Keyword Analysis service by replacing 'sentiment' with 'keyPhrases' - have a try!
+
 ```
 import os
 import json
