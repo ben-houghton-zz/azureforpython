@@ -1,4 +1,4 @@
-###. Deploy a Python script as a Chron initiated Azure WebJob
+### Deploy a Python script as a Chron initiated Azure WebJob
 
 Function are a great way for executing your Python scripts on Azure, but an alternate approach is to use a Azure WebJob for running background tasks. You can create Azure WebJobs on any Web App implementation or a Function App that not running in Consumption and have them run continuously or be triggered by a chron interval or run them manually.
 
