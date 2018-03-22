@@ -1,6 +1,6 @@
 ## Use Key Vault to secure API Keys and use this in the Python script
 
-In the previous section we embedded the API key within the URL which coudl be easily retrieved from within our source code. The answer to this insecurity is to hold our API Key in Azure Key Vault and to access it securely using REST call and a Service Principle identity.
+Embedding the API key within the URL is not a particularly secure approach, the key could be easily retrieved from within our source code. The answer to this insecurity is to hold our API Key in Azure Key Vault and to access it securely using REST call and a Service Principle identity.
 
 There is a great overview for you to follow here - https://docs.microsoft.com/en-us/python/api/overview/azure/key-vault?view=azure-python 
 
