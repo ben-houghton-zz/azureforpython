@@ -3,17 +3,41 @@
 
  In this workshop, we are going to - 
 
-			1. Create a Jupyter Notebook in notebooks.azure.com
-			2. Share the notebook with users in the workshop
-			3. Install Azure SDK to notebook
-			4. Show how to create Azure resources in notebook using Azure SDK
-			5. Show how to call a Function API as a REST service in Python & notebook
-			6. Show how to use Key Vault to secure API Keys and use this in the Python script
-			7. Deploy a Python script as a Chron initiated Azure WebJob
-			8. Exercise: Create notebook. Add Azure SDK. Call predefined Python Echo function using supplied 
-			   API key via the Notebook
+			1. Create some Azure resources
+				Web App, Function App, Storage Account
+			2. Create a Jupyter Notebook in notebooks.azure.com
+			3. Share the notebook with users in the workshop
+			4. Install Azure SDK to notebook
+			5. Show how to create Azure resources in notebook using Azure SDK
+			6. Create a Python based website
+			6. Show how to call a Function API as a REST service in Python & notebook
+			7. Show how to use Key Vault to secure API Keys and use this in the Python script
+			8. Deploy a Python script as a Chron initiated Azure WebJob
 
- ### 1). Create a SaaS Jupyter Notebook
+ ### 1). Create Azure Resources
+ 
+ #### Create an Azure Web App using the Azure Portal
+ 
+ Create a Web App with a Basic App Service Plan in N Europe. 
+ 
+ <img src="https://github.com/ben-houghton/azureforpython/blob/master/images/webapp1.PNG" width="700">
+ 
+ 
+ <img src="https://github.com/ben-houghton/azureforpython/blob/master/images/webapp2.png" width="700">
+ 
+ 
+ #### Create an Azure Resource Group using the Azure Portal Command Line Interface
+ 			https://github.com/ben-houghton/azureforpython/blob/master/Workshop-AzureCLI.md
+			
+ #### Create an Azure Function App using the Azure Portal Command Line Interface
+ 			https://github.com/ben-houghton/azureforpython/blob/master/Workshop-CreateFunctionAppWithCLI.md
+ 
+ 
+ 
+ 
+
+
+ ### 2). Create a SaaS Jupyter Notebook
  
  Navigate your browser to the Microsoft Azure Notebooks Url https://notebooks.azure.com
  
