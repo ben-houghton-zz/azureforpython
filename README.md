@@ -58,19 +58,16 @@ Follow this workshop https://github.com/ben-houghton/azureforpython/blob/master/
  
  Follow this workshop https://github.com/ben-houghton/azureforpython/blob/master/Workshop-CreatePythonWebPage.md
 
- #### iii. Create an Python Azure Webjob 
+ #### iiii. Create an Python Azure Webjob 
+ 
+ Create a long running Python background job using Azure App Services - 
+ 
  Follow this workshop  https://github.com/ben-houghton/azureforpython/blob/master/Workshop-CreatePythonWebjob.md
  
  
-
-
-### 8). Exercise: Call the Azure Function API using the Notebook script       
-
-Put the sections we've covered together - 
-
-	- Create a SaaS Jupyter notebook at https://notebooks.azure.com
-	- Share the notebook
-	- Add the Azure SDK
-	- Call the Azure Function Http App using the supplied URL and API Key
-			   
+ #### iv. Secure your script secrets in Azure KeyVault 
+ 
+ Replace hard coded secrets in your Python script with Key Vault secured secrets  - 
+ 
+ Follow this workshop  https://github.com/ben-houghton/azureforpython/blob/master/Workshop-SecureSecretsWithKeyVault.md
  
