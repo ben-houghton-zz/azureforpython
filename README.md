@@ -23,7 +23,7 @@
  <img src="https://github.com/ben-houghton/azureforpython/blob/master/images/webapp1.PNG" width="700">
  
  
- <img src="https://github.com/ben-houghton/azureforpython/blob/master/images/webapp2.png" width="700">
+ <img src="https://github.com/ben-houghton/azureforpython/blob/master/images/webapp2.PNG" width="700">
  
  
  #### Create an Azure Resource Group using the Azure Portal Command Line Interface
