@@ -38,7 +38,14 @@ response.write(data)
 response.close()
 ```
 
-Post Request JSON Body
+You can make a Post request to your Sentiment Analysis Function through using either POSTMAN or your Python Notebook using the following JSON body. You need to set the request content type to 'application/json'.
+
+
+
+
+
+
+
 ```
 {
         "documents": [
