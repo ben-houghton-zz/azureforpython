@@ -36,43 +36,6 @@ The easiest way to test an HttpTrigger Function is to use `curl`. You'll need to
 
 `curl http://<app_name>.azurewebsites.net/api/<FunctionName>?name=<yourname>`
 
-For a more advanced approach, call the HttpTrigger Function from notebooks.azure.com
-
- ```
-
-########### Python 2.7 ############# 
-import httplib, urllib, base64 
-
-
-try: 
-    conn = httplib.HTTPSConnection('http://<app_name>.azurewebsites.net') 
-    conn.request("GET", "/api/<FunctionName>?name=<yourname>") 
-    response = conn.getresponse() 
-    data = response.read() 
-    print(data) 
-    conn.close() 
-except Exception as e: 
-    print("[Errno {0}] {1}".format(e.errno, e.strerror)) 
-
-#################################### 
- 
-
-########### Python 3.2 ############# 
-import http.client, urllib.request, urllib.parse, urllib.error, base64 
-
-try: 
-    conn = httplib.HTTPSConnection('http://<app_name>.azurewebsites.net') 
-    conn.request("GET", "/api/<FunctionName>?name=<yourname>") 
-    response = conn.getresponse() 
-    data = response.read() 
-    print(data) 
-    conn.close() 
-except Exception as e: 
-    print("[Errno {0}] {1}".format(e.errno, e.strerror)) 
-
-#################################### 
-
- ```
 
 ### Update the Python version for App Service
 
