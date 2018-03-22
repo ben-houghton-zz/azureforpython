@@ -2,9 +2,13 @@
 
 Embedding the API key within the URL is not a particularly secure approach, the key could be easily retrieved from within our source code. The answer to this insecurity is to hold our API Key in Azure Key Vault and to access it securely using REST call and a Service Principle identity.
 
+First thing to do is to create an Azure Key Vault to hold your keys & secrets - https://docs.microsoft.com/en-us/azure/key-vault/key-vault-get-started
+
 There is a great overview for you to follow here - https://docs.microsoft.com/en-us/python/api/overview/azure/key-vault?view=azure-python 
 
 The implementation of this may be spilt into a number of scripts but effectively you need to make a call to Key Vault using a secure Service Principle identity to obtain the API Key and then append the returned value to your API call.
+
+You can build this example in your Notebook
 
 Something like this - 
 
