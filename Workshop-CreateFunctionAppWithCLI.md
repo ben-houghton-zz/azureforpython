@@ -1,7 +1,7 @@
 
 # Get Started with Azure Functions
 
-## Exercise 1 - Create a new Azure Function App
+## Create a new Azure Function App
 For a Function to operate, it needs some underlying infrastructure. There are 2 supported types
 of resources supported for Azure Functions
 
