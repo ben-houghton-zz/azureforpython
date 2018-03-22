@@ -40,12 +40,6 @@ response.close()
 
 You can make a Post request to your Sentiment Analysis Function through using either POSTMAN or your Python Notebook using the following JSON body. You need to set the request content type to 'application/json'.
 
-
-
-
-
-
-
 ```
 {
         "documents": [
@@ -82,3 +76,5 @@ You can make a Post request to your Sentiment Analysis Function through using ei
         ]
     }
 ```
+
+ <img src="https://github.com/ben-houghton/azureforpython/blob/master/images/postmanrequest.PNG" width="700">
