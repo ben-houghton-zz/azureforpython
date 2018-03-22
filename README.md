@@ -26,11 +26,20 @@
  <img src="https://github.com/ben-houghton/azureforpython/blob/master/images/webapp2.PNG" width="700">
  
  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
  #### Create an Azure Resource Group using the Azure Portal Command Line Interface
- 			https://github.com/ben-houghton/azureforpython/blob/master/Workshop-AzureCLI.md
+
+Follow this workshop https://github.com/ben-houghton/azureforpython/blob/master/Workshop-AzureCLI.md
 			
  #### Create an Azure Function App using the Azure Portal Command Line Interface
- 			https://github.com/ben-houghton/azureforpython/blob/master/Workshop-CreateFunctionAppWithCLI.md
+
+Follow this workshop https://github.com/ben-houghton/azureforpython/blob/master/Workshop-CreateFunctionAppWithCLI.md
  
  
  
