@@ -76,5 +76,6 @@ You can make a Post request to your Sentiment Analysis Function through using ei
         ]
     }
 ```
+Your POSTMAN request should look like this - 
 
  <img src="https://github.com/ben-houghton/azureforpython/blob/master/images/postmanrequest.PNG" width="700">
