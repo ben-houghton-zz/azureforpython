@@ -8,9 +8,9 @@
 			2. Use Python and Azure 
 				Create a Jupyter Notebook in notebooks.azure.com
 				Create a Python Sentiment Analysis Function API
-				Facade your Function API with an Azure API Management
 				Build a Python Azure Web Site
 				Create an Python Azure Webjob 
+				Facade your Function API with an Azure API Management
 				Secure your script secrets in Azure KeyVault 
 
  ### 1). Create Azure Resources
