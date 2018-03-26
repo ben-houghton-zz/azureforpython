@@ -23,6 +23,10 @@
  
  <img src="https://github.com/ben-houghton/azureforpython/blob/master/images/webapp2.PNG" width="700">
  
+ Once the Web App has been created we can deplohy the code using FTP, Web Deploy or GIT.
+ 
+ https://docs.microsoft.com/en-us/azure/app-service/app-service-deploy-local-git
+ 
  ---
  
 #### ii. Create an Azure Resource Group using the Azure Portal Command Line Interface
