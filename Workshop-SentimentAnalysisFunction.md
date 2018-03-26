@@ -1,10 +1,12 @@
-# Create a Python HttpTrigger that performs sentiment analysis on a collection text
+# Build an Azure API in Python that performs sentiment analysis on a corpus of text
 
 Build this example as a new Python Function in your serverless Function App.
 
-This Python Function code receives a collection of text snippets as a POST body which it submits to Azure Cognitive Services Text Analytics API. The Function makes a REST call with Post body to the API using the HTTPLib module
+This Python Function code receives a collection of text snippets as a POST body which it submits to Azure Cognitive Services Text Analytics API. The Function makes a REST call with Post body to the API using the HTTPLib module. This is a great example of how to very quickly build an API in Azure. You can use this approach to build multiple APIs that you can expose publically or keep private.
 
-You can change the API call to use the Keyword Analysis service by replacing 'sentiment' with 'keyPhrases' - have a try!
+Create your Function App as a HttpTrigger using the 'Experimental Language' of Python. Use the text below as the body if the Function.
+
+**You'll need to obtain a Subscription Key for the Text Analytics Cognitive Services API before running this example**
 
 ```
 import os
@@ -81,3 +83,9 @@ You can make a Post request to your Sentiment Analysis Function through using ei
 Your POSTMAN request should look like this - 
 
  <img src="https://github.com/ben-houghton/azureforpython/blob/master/images/postmanrequest.PNG" width="700">
+ 
+ You can change the API call to use the Keyword Analysis service by replacing 'sentiment' with 'keyPhrases' - have a try!
+ 
+ You now have a fully functioning API that you have built that you can use to determine the sentiment analysis or keywords of a corpus of text.
+ 
+
