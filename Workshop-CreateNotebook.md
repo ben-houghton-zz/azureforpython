@@ -90,7 +90,7 @@ The copy the code from this example https://github.com/Azure-Samples/storage-blo
 
 If you created a Storage Account Earlier, you can use this Storage Account details or you can create a new storage account through the Azure Portal.
 
-You then need to obtain the Storage account name and keys to be able to use them in the following script. Copy them to notebook so you can use them later.
+**You then need to obtain the Storage account name and keys to be able to use them in the following script. Copy them to notebook so you can use them later.**
 
 <img src="https://github.com/ben-houghton/azureforpython/blob/master/images/pythonstgaccountkeys.PNG" width="700">
 
@@ -98,7 +98,7 @@ To get this script to run copy in the storage account name and keys
 
 <img src="https://github.com/ben-houghton/azureforpython/blob/master/images/pythonstgaccount.PNG" width="700">
 
-You'll need to make one other change to the script. When the script creates a storage container it looks for a relative directory that doesn't exist, so simply just remove the reference to 'Documents'.
+**You'll need to make one other change to the script. When the script creates a storage container it looks for a relative directory that doesn't exist, so simply just remove the reference to 'Documents'.**
 
 Before -
 <img src="https://github.com/ben-houghton/azureforpython/blob/master/images/scripteditorig.PNG" width="700">
@@ -108,7 +108,7 @@ After -
 <img src="https://github.com/ben-houghton/azureforpython/blob/master/images/scriptedit.PNG" width="700">
 
 
-When the script runs in your notebook, it's create a new Blob Container and add a file. Before you delete the sample, take a look at the resultant file that gets created in the Storage account
+When the script runs in your notebook, it's create a new Blob Container and add a file. **Before you delete the sample, take a look at the resultant file that gets created in the Storage account**
 
 <img src="https://github.com/ben-houghton/azureforpython/blob/master/images/scriptrun.PNG" width="700">
 
