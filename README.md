@@ -76,9 +76,10 @@ Follow this workshop https://github.com/ben-houghton/azureforpython/blob/master/
  
  ---
  
- #### iv. Facade your Function API with an Azure API Management 
+ #### v. Facade your Function API with an Azure API Management 
  
- Follow this lab but substitute the source API URL with your own - https://docs.microsoft.com/en-us/azure/api-management/import-and-publish 
+Follow this lab but substitute the source API URL with your own - https://docs.microsoft.com/en-us/azure/api-management/import-and-publish 
+
  ---
  
  #### vi. Secure your script secrets in Azure KeyVault 
