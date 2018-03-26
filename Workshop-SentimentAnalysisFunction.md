@@ -1,8 +1,18 @@
+
+
 # Build an Azure API in Python that performs sentiment analysis on a corpus of text
 
 Take a look at Azure Cognitive Services - these are Artificial Intelligence Software as a Service applications.
 
 https://azure.microsoft.com/en-us/services/cognitive-services/directory/
+
+and
+
+https://azure.microsoft.com/en-us/services/cognitive-services/text-analytics/
+
+and 
+
+https://azure.microsoft.com/en-us/services/cognitive-services/emotion/
 
 
 In this exercise, we are going to build  a new Python Function in your serverless Function App.
