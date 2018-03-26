@@ -57,15 +57,10 @@ Follow this workshop https://github.com/ben-houghton/azureforpython/blob/master/
  
  Follow this workshop https://github.com/ben-houghton/azureforpython/blob/master/Workshop-SentimentAnalysisFunction.md
  
- ---
- 
- #### iii. Facade your Function API with an Azure API Management 
- 
- Follow this lab but substitute the source API URL with your own - https://docs.microsoft.com/en-us/azure/api-management/import-and-publish
  
  ---
  
- #### iiii. Build a Python Azure Web Site
+ #### iii. Build a Python Azure Web Site
  
  Build a single page Azure Website from you Azure Notebook using the Azure SDK -
  
@@ -73,12 +68,17 @@ Follow this workshop https://github.com/ben-houghton/azureforpython/blob/master/
  
  ---
 
- #### v. Create an Python Azure Webjob 
+ #### iiii. Create an Python Azure Webjob 
  
  Create a long running Python background job using Azure App Services - 
  
  Follow this workshop  https://github.com/ben-houghton/azureforpython/blob/master/Workshop-CreatePythonWebjob.md
  
+ ---
+ 
+ #### iv. Facade your Function API with an Azure API Management 
+ 
+ Follow this lab but substitute the source API URL with your own - https://docs.microsoft.com/en-us/azure/api-management/import-and-publish 
  ---
  
  #### vi. Secure your script secrets in Azure KeyVault 
