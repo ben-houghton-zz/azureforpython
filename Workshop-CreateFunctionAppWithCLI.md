@@ -41,6 +41,6 @@ The easiest way to test an HttpTrigger Function is to use `curl`. You'll need to
 
 As Python is a 'Preview' language there are some peculiarities in installing Python packages. To allow you to install Python packages that your Function code can access and use, you need to update the Python version and the PYTHONPATH AppSettings variable.
 
-You can follow the setup in this article -
+Although App Service by default has Python 2.7 and Python 3.4 installed in root folders on the server, you cannot customize or install packages in these environments, nor should you depend on their presence. You should instead rely on a site extension that you control, as described in this article.
 
 https://github.com/MicrosoftDocs/visualstudio-docs/blob/master/docs/python/managing-python-on-azure-app-service.md
