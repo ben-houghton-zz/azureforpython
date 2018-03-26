@@ -72,7 +72,7 @@ To install the Azure SDK package type -
 
 
 This will allow you to write scripts in Python that consume the Azure services and resources in your Azure Subscription
-
+ 
 
 The best place to start with help for building Python Apps that run on or integrate with Azure is the Azure Python Developer Center https://azure.microsoft.com/en-us/develop/python/. You can find lots of examples and development scenarios there and also the Azure Python SDK reference http://azure-sdk-for-python.readthedocs.io/en/latest/
 
