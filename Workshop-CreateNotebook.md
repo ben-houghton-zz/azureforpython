@@ -37,7 +37,27 @@ Share the Notebook by clicking on the 'Share' icon and in the dialog box, add a 
 
 
 
-### 3). Install the Azure Python SDK
+### 3). Call a Function API as a REST service in Python & notebook
+
+Once I have started creating APIs in Azure using services like Functions or API Apps I can make these available to my scripts. The APIs will be able to perform some sort of heavy duty process that takes a request and returns a response. In this instance I have created a simple Python based Serverless HTTP Function that call be called as a REST service in my Python script. I've made the Function public and ensured that an API key needs to be provided to get access - 
+
+https://benhdemo.azurewebsites.net/api/PyDemo
+
+The API can be called in a Python script
+
+```javascript
+	import requests, json
+	api_url = "https://benhdemo.azurewebsites.net/api/Pydemo"
+	data = json.dumps({'name':'Ben H'})
+	r = requests.post(api_url, data)
+	print(r.text)
+```
+
+<img src="https://github.com/ben-houghton/azureforpython/blob/master/images/functioncall.PNG" width="700">
+
+
+
+### 4). Install the Azure Python SDK
 
 Navigate to the notebook you created by double-clicking on it's name in the library
 
@@ -57,7 +77,7 @@ This will allow you to write scripts in Python that consume the Azure services a
 The best place to start with help for building Python Apps that run on or integrate with Azure is the Azure Python Developer Center https://azure.microsoft.com/en-us/develop/python/. You can find lots of examples and development scenarios there and also the Azure Python SDK reference http://azure-sdk-for-python.readthedocs.io/en/latest/
 
 
-### 4). Create Azure Resources using the Azure Python SDK
+### 5). Create Azure Resources using the Azure Python SDK
 
 There are some good examples of how to integrate Python and the Azure SDK. This example https://github.com/Azure-Samples/storage-blobs-python-quickstart demonstates how to use the Azure SDK to add files to a storage account. 
 
@@ -84,20 +104,3 @@ When the script runs in your notebook, it's create a new Blob Container and add 
 
 <img src="https://github.com/ben-houghton/azureforpython/blob/master/images/scriptrun.PNG" width="700">
 
-### 5). Call a Function API as a REST service in Python & notebook
-
-Once I have started creating APIs in Azure using services like Functions or API Apps I can make these available to my scripts. The APIs will be able to perform some sort of heavy duty process that takes a request and returns a response. In this instance I have created a simple Python based Serverless HTTP Function that call be called as a REST service in my Python script. I've made the Function public and ensured that an API key needs to be provided to get access - 
-
-https://benhdemo.azurewebsites.net/api/PyDemo
-
-The API can be called in a Python script
-
-```javascript
-	import requests, json
-	api_url = "https://benhdemo.azurewebsites.net/api/Pydemo"
-	data = json.dumps({'name':'Ben H'})
-	r = requests.post(api_url, data)
-	print(r.text)
-```
-
-<img src="https://github.com/ben-houghton/azureforpython/blob/master/images/functioncall.PNG" width="700">
