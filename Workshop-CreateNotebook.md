@@ -108,7 +108,7 @@ After -
 <img src="https://github.com/ben-houghton/azureforpython/blob/master/images/scriptedit.PNG" width="700">
 
 
-When the script runs in your notebook, it's create a new Blob Container and add a file.
+When the script runs in your notebook, it's create a new Blob Container and add a file. Before you delete the sample, take a look at the resultant file that gets created in the Storage account
 
 <img src="https://github.com/ben-houghton/azureforpython/blob/master/images/scriptrun.PNG" width="700">
 
