@@ -112,3 +112,8 @@ When the script runs in your notebook, it's create a new Blob Container and add 
 
 <img src="https://github.com/ben-houghton/azureforpython/blob/master/images/scriptrun.PNG" width="700">
 
+The Storage container and blob should have been created in the storage account 
+
+<img src="https://github.com/ben-houghton/azureforpython/blob/master/images/pythonstgaccountoutputblob.PNG" width="700">
+
+
