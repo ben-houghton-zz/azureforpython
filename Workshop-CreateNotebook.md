@@ -88,13 +88,13 @@ When the script runs in your notebook, it's create a new Blob Container and add 
 
 Once I have started creating APIs in Azure using services like Functions or API Apps I can make these available to my scripts. The APIs will be able to perform some sort of heavy duty process that takes a request and returns a response. In this instance I have created a simple Python based Serverless HTTP Function that call be called as a REST service in my Python script. I've made the Function public and ensured that an API key needs to be provided to get access - 
 
-https://benhdemo.azurewebsites.net/api/HelloWorld?code=[apikey]
+https://benhdemo.azurewebsites.net/api/PyDemo
 
 The API can be called in a Python script
 
 ```javascript
 	import requests, json
-	api_url = "https://benhdemo.azurewebsites.net/api/HelloWorld?code=[apikey]"
+	api_url = "https://benhdemo.azurewebsites.net/api/Pydemo"
 	data = json.dumps({'name':'Ben H'})
 	r = requests.post(api_url, data)
 	print(r.text)
