@@ -20,8 +20,8 @@ a new storage account. Optionally, you can use the `--no-wait` option to speed t
 ### Create an AppService Plan FunctionApp
 We can easily create and deploy some code to our function app using the following command:
 
-`az functionapp create --name <app_name> --storage-account  <storage_name>  --resource-group myResourceGroup \
---consumption-plan-location southuk --deployment-source-url https://github.com/Azure-Samples/functions-quickstart`
+`az functionapp create --name <app_name> --storage-account  <storage_name>  --resource-group myResourceGroup 
+--consumption-plan-location uksouth --deployment-source-url https://github.com/Azure-Samples/functions-quickstart`
 
 Setting the `--consumption-plan-location` value means that the FunctionApp will run on the Consumption Plan. Checking the resource template for this, you'll notice that this assigns a `--sku Dynamic` to the 
 FunctionApp 
